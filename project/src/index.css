@@ -1,0 +1,285 @@
+:root {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: #f7f8fb;
+  color: #222;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border: 1px solid #d8deea;
+  border-radius: 10px;
+}
+
+.brand-link {
+  color: #111827;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.main-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.main-nav-link {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav-link:hover {
+  background: #eef2ff;
+}
+
+.main-nav-link.active {
+  background: #1d4ed8;
+  color: #fff;
+}
+
+.dashboard-page {
+  max-width: 900px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.dashboard-card {
+  background: #fff;
+  border: 1px solid #d8deea;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.dashboard-card-primary {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #fff;
+}
+
+.dashboard-card-label {
+  margin: 0;
+  font-size: 0.92rem;
+  opacity: 0.95;
+}
+
+.dashboard-card-value {
+  margin: 0.35rem 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.dashboard-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-client-info p {
+  margin: 0 0 0.45rem;
+}
+
+.dashboard-client-info p:last-child {
+  margin-bottom: 0;
+}
+
+.dashboard-client-info span {
+  font-weight: 700;
+}
+
+.client-form {
+  width: min(100%, 460px);
+  padding: 1rem;
+  border: 1px solid #d8deea;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.form-group {
+  margin-bottom: 0.9rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid #bec7d8;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-group input:focus {
+  border-color: #1d4ed8;
+}
+
+.form-error {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  color: #c62828;
+}
+
+.form-submit {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.65rem 1rem;
+  background: #1d4ed8;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background: #1a44bd;
+}
+
+.clients-section {
+  margin-top: 1rem;
+}
+
+.clients-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.add-client-link {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.add-client-link:hover {
+  background: #1a44bd;
+}
+
+.clients-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #d8deea;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.clients-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1.4fr 1fr 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e8edf6;
+}
+
+.clients-row:last-child {
+  border-bottom: 0;
+}
+
+.clients-row-header {
+  background: #f1f5ff;
+  font-weight: 700;
+}
+
+.clients-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.action-link,
+.action-delete {
+  border: 1px solid #c7d2e5;
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+  background: #fff;
+  color: #1f2937;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.action-link:hover,
+.action-delete:hover {
+  background: #eef2ff;
+}
+
+.client-details-page {
+  max-width: 700px;
+}
+
+.client-details-card {
+  margin-top: 0.75rem;
+  background: #fff;
+  border: 1px solid #d8deea;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.client-details-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #e8edf6;
+}
+
+.client-details-row:last-child {
+  border-bottom: 0;
+}
+
+.client-details-label {
+  font-weight: 700;
+  color: #374151;
+}
+
+.client-details-value {
+  color: #111827;
+}
+
+.client-details-edit {
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #c7d2e5;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.client-details-edit:hover {
+  background: #eef2ff;
+}
